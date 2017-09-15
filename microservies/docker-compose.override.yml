@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  tacotruck.product:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "4001:80"
+
+  tacotruck.customer:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "4002:80"

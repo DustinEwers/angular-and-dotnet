@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  tacotruck.product:
+    image: tacotruck.product
+    build:
+      context: ./TacoTruck.Product
+      dockerfile: Dockerfile
+
+  tacotruck.customer:
+    image: tacotruck.customer
+    build:
+      context: ./TacoTruck.Customer
+      dockerfile: Dockerfile
