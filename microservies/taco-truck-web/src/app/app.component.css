@@ -22,9 +22,21 @@ nav{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 8px 12px;
+    padding: 4px 8px;
 }
 
-.main{
-    font-size: 120%;
+nav > a {
+    font-size: 105%;
+    padding: 12px 12px;   
+}
+
+nav > a.main {
+    font-size: 125%;
+    padding-right: 16px;   
+}
+
+.router-container{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
 }

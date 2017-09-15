@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { IndexComponent } from './index/index.component';
 import { ProductDisplayComponent } from './product-display/product-display.component';
 import { MaterialComponentsModule } from '../material-components/material-components.module';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductService } from './product.service';
+
 
 const routes: Routes = [
   { path: 'products',  component: ProductDisplayComponent }
@@ -12,9 +15,11 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     MaterialComponentsModule,
     RouterModule.forChild(routes)    
   ],
-  declarations: [IndexComponent, ProductDisplayComponent]
+  declarations: [IndexComponent, ProductDisplayComponent],
+  providers:[ProductService]
 })
 export class ProductModule { }

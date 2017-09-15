@@ -38,6 +38,8 @@ namespace TacoTruck.Customer
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200"));
+
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

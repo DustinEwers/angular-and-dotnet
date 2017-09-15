@@ -1,21 +1,12 @@
-<!-- <div id="container">
-  <div id="app-navbar" class="mat-elevation-z6">
-    <nav class="mat-elevation-z6">
-      <a routerLink="/" md-button routerLinkActive="active" class="main"><md-icon>business</md-icon> Taco Truck Manager</a>
-      <a routerLink="/customers" md-button routerLinkActive="active">Customers</a>
-      <a routerLink="/products" md-button routerLinkActive="active">Products</a>
-    </nav>
-  </div>
-  <router-outlet></router-outlet>
-</div> -->
-
 <div id="container">
-<md-toolbar color="primary">
-      <nav >
-        <a routerLink="/" md-button routerLinkActive="active" class="main"><md-icon>business</md-icon> Taco Truck Manager</a>
-        <a routerLink="/customers" md-button routerLinkActive="active">Customers</a>
-        <a routerLink="/products" md-button routerLinkActive="active">Products</a>
-      </nav>
-</md-toolbar>
-<router-outlet></router-outlet>
+  <md-toolbar color="primary" class="mat-elevation-z4">
+        <nav>
+          <a routerLink="/" md-button routerLinkActive="active" class="main"><md-icon>business</md-icon> Taco Truckr</a>
+          <a routerLink="/customers" md-button routerLinkActive="active">Customers</a>
+          <a routerLink="/products" md-button routerLinkActive="active">Products</a>
+        </nav>
+  </md-toolbar>
+  <div class="router-container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
