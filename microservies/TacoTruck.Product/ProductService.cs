@@ -21,7 +21,7 @@ namespace TacoTruck.Product
             return new List<Product>
             {
                 new Product(1, "Basic Taco", 3.50m, 2.00m, 300),
-                new Product(2, "Delux Taco", 4.50m, 2.25m, 40),
+                new Product(2, "Deluxe Taco", 4.50m, 2.25m, 40),
                 new Product(3, "Korean Taco", 3.50m, 2.00m, 30),
                 new Product(4, "Taco Bowl", 5.00m, 3.00m, 175),
                 new Product(5, "Choco Taco", 2.50m, 1.00m, 150),

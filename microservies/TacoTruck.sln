@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacoTruck.Product", "TacoTruck.Product\TacoTruck.Product.csproj", "{9400A809-5B19-4651-AD0A-7AE395DE5493}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TacoTruck.Product", "TacoTruck.Product\TacoTruck.Product.csproj", "{9400A809-5B19-4651-AD0A-7AE395DE5493}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{36F15615-953D-4294-B63F-624FF4FE2646}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacoTruck.Customer", "TacoTruck.Customer\TacoTruck.Customer.csproj", "{0534F162-69E0-4A78-BAAB-76EEC410CE07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TacoTruck.Customer", "TacoTruck.Customer\TacoTruck.Customer.csproj", "{0534F162-69E0-4A78-BAAB-76EEC410CE07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

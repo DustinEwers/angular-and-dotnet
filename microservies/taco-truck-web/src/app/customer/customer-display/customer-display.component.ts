@@ -19,12 +19,12 @@ export class CustomerDisplayComponent implements OnInit {
   dataSource: CustomerDataSource | null;
   displayedColumns = ['firstName', 'lastName', 'email', 'address', 'address2'];
   @ViewChild(MdPaginator) paginator: MdPaginator;
-  
+
   constructor(private service: CustomerService) {
-    
+
   }
 
-  ngOnInit() { 
+  ngOnInit() {
     this.service.getCustomers().forEach(x => x.map(y => this.dataAdapter.add(y)) );
     this.dataSource = new CustomerDataSource(this.dataAdapter, this.paginator);
   }
@@ -59,8 +59,6 @@ export class CustomerDataSource extends DataSource<any> {
       const startIndex = this._paginator.pageIndex * this._paginator.pageSize;
       return data.splice(startIndex, this._paginator.pageSize);
     });
-
-    //return this.service != null ? this.service.getCustomers(): null;
   }
 
   disconnect() { }

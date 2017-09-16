@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace TacoTruck.Product.Controllers
 {
     [Route("api/[controller]")]
-    public class ProductsController : Controller
+    public class ProductController : Controller
     {
         private readonly IProductService _productService;
 
-        public ProductsController(IProductService productService) {
+        public ProductController(IProductService productService) {
             _productService = productService;
         }
 

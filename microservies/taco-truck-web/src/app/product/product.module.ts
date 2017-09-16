@@ -7,7 +7,6 @@ import { MaterialComponentsModule } from '../material-components/material-compon
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './product.service';
 
-
 const routes: Routes = [
   { path: 'products',  component: ProductDisplayComponent }
 ];
