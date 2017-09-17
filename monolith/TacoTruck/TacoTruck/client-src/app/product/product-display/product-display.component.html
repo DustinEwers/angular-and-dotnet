@@ -1,0 +1,17 @@
+<div class="box">
+  <div *ngFor="let product of products" class="tile">
+    <md-card>
+      <md-card-header>
+        <md-card-title>
+          <h2>{{product.name}}</h2>
+        </md-card-title>
+      </md-card-header>
+      <md-card-content>
+        <p><strong>Price</strong> {{product.price | currency:'USD':true }}</p>
+        <p><strong>Cost</strong> {{product.cost | currency:'USD':true }}</p>
+        <p><strong>Profit</strong> {{product.price - product.cost | currency:'USD':true }}</p>
+        <p><strong>Inventory</strong> {{product.inventory}}</p>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+#container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+nav > a {
+    font-size: 105%;
+    padding: 12px 12px;   
+}
+
+nav > a.main {
+    font-size: 125%;
+    padding-right: 16px;   
+}
+
+.router-container{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+}
