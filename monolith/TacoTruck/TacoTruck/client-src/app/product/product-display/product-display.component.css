@@ -1,10 +1,10 @@
 .tile {
-    width:200px;
+    width:300px;
     float: left;
     margin-left:20px;
     margin-top:20px;
 }
 
 .box{
-    width:700px;
+    width:1000px;
 }

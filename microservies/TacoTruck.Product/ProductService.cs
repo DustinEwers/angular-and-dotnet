@@ -25,6 +25,7 @@ namespace TacoTruck.Product
                 new Product(3, "Korean Taco", 3.50m, 2.00m, 30),
                 new Product(4, "Taco Bowl", 5.00m, 3.00m, 175),
                 new Product(5, "Choco Taco", 2.50m, 1.00m, 150),
+                new Product(6, "Bacon Weave Taco", 2.5m, 1.50m, 200)
             };
         }
 
