@@ -1,0 +1,34 @@
+<h1>Customers</h1>
+<div class="mat-elevation-z8">
+  <md-table #table [dataSource]="dataSource">
+    <ng-container mdColumnDef="firstName">
+      <md-header-cell *mdHeaderCellDef> First Name </md-header-cell>
+      <md-cell *mdCellDef="let element"> {{element.firstName}} </md-cell>
+    </ng-container>
+    <ng-container mdColumnDef="lastName">
+      <md-header-cell *mdHeaderCellDef> Last Name </md-header-cell>
+      <md-cell *mdCellDef="let element"> {{element.lastName}} </md-cell>
+    </ng-container>
+    <ng-container mdColumnDef="email">
+      <md-header-cell *mdHeaderCellDef> Email </md-header-cell>
+      <md-cell *mdCellDef="let element"> {{element.email}} </md-cell>
+    </ng-container>
+    <ng-container mdColumnDef="address">
+      <md-header-cell *mdHeaderCellDef> Address </md-header-cell>
+      <md-cell *mdCellDef="let element"> {{element.address}} </md-cell>
+    </ng-container>
+    <ng-container mdColumnDef="address2">
+      <md-header-cell *mdHeaderCellDef> City/State/Zip </md-header-cell>
+      <md-cell *mdCellDef="let element"> {{element.city}}, {{element.state}} {{element.postalCode}}</md-cell>
+    </ng-container>
+
+    <md-header-row *mdHeaderRowDef="displayedColumns"></md-header-row>
+    <md-row *mdRowDef="let row; columns: displayedColumns;"></md-row>
+  </md-table>
+  <md-paginator #paginator
+      [length]="dataAdapter.data.length"
+      [pageIndex]="0"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 25, 100]">
+  </md-paginator>
+</div>
